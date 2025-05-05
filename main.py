@@ -39,24 +39,6 @@ conn.commit()
 if not os.path.exists("images"):
     os.mkdir("images")
 
-# Function to validate input
-def validate_input(input_value, pattern):
-    """
-    Validates the input against a given regex pattern.
-
-    Args:
-        input_value (str): The input value to validate.
-        pattern (str): The regex pattern to validate against.
-
-    Returns:
-        str: The validated input value.
-
-    Raises:
-        ValueError: If the input does not match the pattern.
-    """
-    if not re.match(pattern, input_value):
-        raise ValueError("Invalid input format.")
-    return input_value
 
 # Function for login
 def login():
